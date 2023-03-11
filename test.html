@@ -8,25 +8,19 @@
     </style>
   </head>
   <body>
-    <div id="mychart">Chart: </div>
+    <div id="mychart"></div>
   </body>
   <script type="text/javascript" src="donut-chart.js"></script>
   <script type="text/javascript">
     var chart_div = document.getElementById("mychart")
     var mychart = new DonutChart(chart_div, {
-        r: 60,
-        stroke: 16,
+        r: 90,
+        stroke: 36,
         scale: 100,
         items: [
-            { label: "A", value: .2 },
-            { label: "B", value: .1 },
-            { label: "C", value: .5 },
-        ]
-    })
-    mychart.update({
-        items: [
-            { label: "J", value: .4 },
-            { label: "Q", value: .3 },
+            { label: "A", value: .002 },
+            { label: "B", value: .098 },
+            { label: "C", value: .9 },
         ]
     })
   </script>
